@@ -1,0 +1,137 @@
+.desktop1-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .desktop1-desktop1 {
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(1, 1, 1, 1);
+  }
+  .desktop1-hero-wrapper {
+    top: 239px;
+    left: 147px;
+    width: 1145px;
+    height: 546px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+  .desktop1-hero-wrappertext {
+    gap: 75px;
+    height: 252px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop1-header-text {
+    gap: 28px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .desktop1-text {
+    color: rgba(253, 253, 253, 1);
+    width: 520px;
+    height: auto;
+    font-size: 64px;
+    font-style: ExtraBold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 800;
+    line-height: 71px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-text02 {
+    color: rgba(255, 255, 255, 1);
+    width: 531px;
+    height: auto;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 36px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-hero-wrapperimage {
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .desktop1-hero-wrapperimagecenter {
+    width: 614px;
+    height: 546px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .desktop1-webdevelopment1 {
+    top: 0px;
+    left: 0px;
+    width: 614px;
+    height: 546px;
+    position: absolute;
+  }
+  .desktop1-btn-primary {
+    gap: 10px;
+    top: 690px;
+    left: 218px;
+    width: 130px;
+    display: flex;
+    padding: 19px 30px;
+    position: absolute;
+    box-shadow: 0px 4px 49px 0px rgba(0, 0, 0, 0.15000000596046448) ;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: rgba(126, 217, 87, 1);
+    font-family: Roboto;
+  }
+  .desktop1-text07 {
+    color: rgba(1, 1, 1, 1);
+    height: auto;
+    text-align: left;
+    line-height: 14px;
+  }
+  .desktop1-btn-primary1 {
+    gap: 10px;
+    top: 690px;
+    left: 417px;
+    width: 151px;
+    display: flex;
+    padding: 19px 30px;
+    position: absolute;
+    box-shadow: 0px 4px 49px 0px rgba(0, 0, 0, 0.15000000596046448) ;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: rgba(126, 217, 87, 1);
+    font:bold;
+    font-family: Roboto;
+  }
+  .desktop1-text09 {
+    color: rgba(1, 1, 1, 1);
+    height: auto;
+    text-align: left;
+    line-height: 14px;
+  }
+  .desktop1-btn-primary:hover,
+  .desktop1-btn-primary1:hover {
+    cursor: pointer;
+  }
