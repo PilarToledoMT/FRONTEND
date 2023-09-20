@@ -88,18 +88,19 @@
   .desktop3-text {
     top: 17px;
     left: 18px;
-    color: rgba(220, 221, 222, 1);
-    width: 913px;
-    height: auto;
+    color: rgba(255, 255, 255, 1);
+    width: 975px;
+    height: 22px;
     position: absolute;
     font-size: 16px;
-    font-style: Condensed Regular;
     text-align: left;
     font-family: Roboto;
     font-weight: 400;
     line-height: normal;
     font-stretch: condensed;
     text-decoration: none;
+    background-color: rgba(64, 68, 75, 1);
+    border: none;
   }
   .desktop3-divicon {
     top: 5px;
@@ -120,16 +121,29 @@
     height: 36px;
     display: flex;
     position: absolute;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 1;
     background-color: rgba(126, 217, 87, 1);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .desktop3-group57:hover {
+    background-color: white;
+    color: black; 
+}
+  .desktop3-button-icon{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
   }
   .desktop3-filledcontentsend {
-    top: 7.199951171875px;
-    left: 7.4000244140625px;
-    width: 22px;
-    height: 22px;
-    position: absolute;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .desktop3-divbar {
     top: 49.000160217285156px;
@@ -163,12 +177,11 @@
   .desktop3-divsearch-bar {
     top: 0px;
     left: 63px;
-    width: 289px;
-    height: 24px;
+    height: 34px;
     display: flex;
     overflow: hidden;
     position: absolute;
-    align-items: flex-start;
+    align-items: center;
     flex-shrink: 0;
     border-radius: 3px;
     background-color: rgba(32, 34, 37, 1);
@@ -194,6 +207,23 @@
     line-height: normal;
     font-stretch: condensed;
     text-decoration: none;
+    display: none;
+  }
+  .desktop3-search-input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    width: 250px;
+    height: 200px;
+    background-color: transparent;
+    color: #fff;
+    margin-right: 10px;
+  }
+  .desktop3-search-button img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
   }
   .desktop3-divchildren {
     top: 12px;
