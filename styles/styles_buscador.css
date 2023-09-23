@@ -1,0 +1,144 @@
+.desktop4-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .desktop4-desktop4 {
+    width: 100%;
+    height: 1024px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .desktop4-frame1 {
+    gap: 10px;
+    top: 34px;
+    left: 531px;
+    width: 378px;
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .desktop4-chat-master2 {
+    width: 358px;
+    height: 306px;
+  }
+  .desktop4-divheader6m5op-b {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    margin: 0 auto;
+}
+  .desktop4-text {
+    color: rgba(242, 243, 245, 1);
+    width: 414px;
+    height: auto;
+    font-size: 32px;
+    font-style: SemiBold;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 30px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop4-divmargin-bottom20315rvt {
+    gap: 8px;
+    top: 419px;
+    left: 432px;
+    width: 575px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop4-divinput3o04eu {
+    width: 575px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: rgba(30, 31, 34, 1);
+    color:white;
+  }
+  .desktop4-divcontents3nemb-x {
+    display: flex;
+    padding: 0 0.6500091552734375px 0 0.8499908447265625px;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .desktop4-text2 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 14px;
+    font-style: Medium;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  .desktop4-button {
+    gap: 10px;
+    top: 499px;
+    left: 433px;
+    width: 239px;
+    height: 44px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    border-radius: 3px;
+    flex-direction: column;
+    background-color: rgba(126, 217, 87, 1);
+    justify-content: center;
+  }
+  .desktop4-button1 {
+    top: 499px;
+    left: 767px;
+    width: 239px;
+    height: 44px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 10px 186.25px;
+    border-radius: 3px;
+    padding-right: 10px 186.25px;
+    padding-bottom: 10px 186.25px;
+    justify-content: center;
+    background-color: rgba(126, 217, 87, 1);
+  }
+  .desktop4-text4 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 14px;
+    font-style: Medium;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
