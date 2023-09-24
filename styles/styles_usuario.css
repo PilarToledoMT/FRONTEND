@@ -214,8 +214,9 @@
   .desktop7-edit-button {
     gap: 20px;
     top: 339px;
+    left: 1100px;
     right: 13px;
-    width: 230px;
+    width: 250px;
     display: flex;
     padding: 10px 40px;
     position: absolute;
@@ -223,6 +224,9 @@
     border-radius: 3px;
     background-color: rgba(126, 217, 87, 1);
   }
+  .desktop7-edit-button:hover {
+    cursor: pointer;
+}
   .desktop7-group1 {
     width: 150px;
     height: 44px;

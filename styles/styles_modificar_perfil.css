@@ -1,0 +1,532 @@
+.desktop11-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  .desktop11-desktop11 {
+    width: 100%;
+    height: 1009px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .desktop11-form {
+    top: 165px;
+    left: 227px;
+    width: 493px;
+    height: 723px;
+    display: flex;
+    padding: 2px 32px 93px;
+    position: absolute;
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.20000000298023224) ;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .desktop11-divflex2s1xbf {
+    gap: 32px;
+    width: 429px;
+    height: 711px;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    align-items: flex-end;
+    flex-shrink: 0;
+    justify-content: flex-start;
+  }
+  .desktop11-divmain-login-containerw-hm-aj-p {
+    gap: 20px;
+    top: 0px;
+    left: 0px;
+    width: 414px;
+    height: 589px;
+    display: flex;
+    position: absolute;
+    align-self: stretch;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop11-divheader6m5op-b {
+    gap: 8px;
+    display: flex;
+    padding: 0 94.90499877929688px 0 95.09500122070312px;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: column;
+  }
+  .desktop11-text {
+    color: rgba(242, 243, 245, 1);
+    height: auto;
+    font-size: 22px;
+    font-style: Display SemiBold;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 600;
+    line-height: 30px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-divblock3u-vsn4 {
+    gap: 14px;
+    display: flex;
+    position: relative;
+    align-self: stretch;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .desktop11-divmargin-bottom20315rvt {
+    gap: 8px;
+    width: 414px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop11-label {
+    gap: 8.160003662109375px;
+    width: 414px;
+    display: flex;
+    padding: 0 247.83999633789062px 0 0;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .desktop11-text02 {
+    color: rgba(181, 186, 193, 1);
+    height: auto;
+    font-size: 11px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-text04 {
+    color: rgba(242, 63, 66, 1);
+    height: auto;
+    font-size: 10px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-divinput3o04eu {
+    width: 414px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: rgba(30, 31, 34, 1);
+    color: white;
+  }
+  .desktop11-div {
+    gap: 8px;
+    width: 414px;
+    display: flex;
+    z-index: 1;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop11-label1 {
+    gap: 6.910003662109375px;
+    width: 414px;
+    display: flex;
+    padding: 0 338.0899963378906px 0 0;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .desktop11-text05 {
+    color: rgb(181, 186, 193);
+    height: auto;
+    font-size: 11px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-text06 {
+    color: rgba(242, 63, 66, 1);
+    height: auto;
+    font-size: 10px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-input-password {
+    width: 414px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: rgba(30, 31, 34, 1);
+    color:white;
+  }
+  .desktop11-div1 {
+    gap: 8px;
+    width: 414px;
+    display: flex;
+    z-index: 2;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop11-label2 {
+    gap: 6.910003662109375px;
+    width: 414px;
+    display: flex;
+    padding: 0 338.0899963378906px 0 0;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .desktop11-text07 {
+    color: rgb(181, 186, 193);
+    height: auto;
+    font-size: 11px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-text08 {
+    color: rgba(242, 63, 66, 1);
+    height: auto;
+    font-size: 10px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-input-password1 {
+    width: 414px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: rgba(30, 31, 34, 1);
+    color: white;
+  }
+  .desktop11-div2 {
+    gap: 8px;
+    width: 414px;
+    display: flex;
+    z-index: 3;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop11-label3 {
+    gap: 6.910003662109375px;
+    width: 414px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding-top: 0 338.0899963378906px 0 0;
+    padding-left: 0 338.0899963378906px 0 0;
+    padding-bottom: 0 338.0899963378906px 0 0;
+  }
+  .desktop11-text09 {
+    color: rgb(181, 186, 193);
+    height: auto;
+    font-size: 11px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-text10 {
+    color: rgba(242, 63, 66, 1);
+    height: auto;
+    font-size: 10px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-input-password2 {
+    width: 414px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: rgba(30, 31, 34, 1);
+    color: white;
+  }
+  .desktop11-div3 {
+    gap: 8px;
+    width: 414px;
+    display: flex;
+    z-index: 4;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop11-label4 {
+    gap: 6.910003662109375px;
+    width: 414px;
+    display: flex;
+    padding: 0 338.0899963378906px 0 0;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .desktop11-text11 {
+    color: rgba(181, 186, 193, 1);
+    height: auto;
+    font-size: 11px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-text13 {
+    color: rgba(242, 63, 66, 1);
+    height: auto;
+    font-size: 10px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-input-password3 {
+    width: 414px;
+    height: 40px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: rgba(30, 31, 34, 1);
+    color:white;
+  }
+  .desktop11-div4 {
+    gap: 8px;
+    width: 414px;
+    display: flex;
+    z-index: 5;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .desktop11-label5 {
+    gap: 6.910003662109375px;
+    width: 414px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding-top: 0 338.0899963378906px 0 0;
+    padding-left: 0 338.0899963378906px 0 0;
+    padding-bottom: 0 338.0899963378906px 0 0;
+  }
+  .desktop11-text14 {
+    color: rgba(181, 186, 193, 1);
+    height: auto;
+    font-size: 11px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-text16 {
+    color: rgba(242, 63, 66, 1);
+    height: auto;
+    font-size: 10px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-input-password4 {
+    width: 414px;
+    height: 30px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background-color: rgba(30, 31, 34, 1);
+    color: white;
+  }
+  .desktop11-divmargin-top42jfjji {
+    gap: 8.470001220703125px;
+    width: 414px;
+    display: flex;
+    padding: 2px 252.39999389648438px 0 0;
+    z-index: 6;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .desktop11-button {
+    display: flex;
+    padding: 0 0.4650001525878906px 0 0.6650009155273438px;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .desktop11-button1 {
+    width: 414px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 10px 186.25px;
+    border-radius: 3px;
+    padding-right: 10px 186.25px;
+    padding-bottom: 10px 186.25px;
+    justify-content: center;
+    background-color: rgba(126, 217, 87, 1);
+  }
+  .desktop11-divcontents3nemb-x {
+    display: flex;
+    padding: 0 0.6500091552734375px 0 0.8499908447265625px;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .desktop11-text17 {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 14px;
+    font-style: Display Medium;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-button2 {
+    width: 414px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding-top: 10px 186.25px;
+    border-radius: 3px;
+    padding-right: 10px 186.25px;
+    padding-bottom: 10px 186.25px;
+    justify-content: center;
+    background-color: rgba(251, 0, 0, 1);
+  }
+  .desktop11-divcontents3nemb-x1 {
+    display: flex;
+    padding: 0 0.6500091552734375px 0 0.8499908447265625px;
+    overflow: hidden;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .desktop11-text19 {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 14px;
+    font-style: Display Medium;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-divvertical-separator2r9g-ha {
+    top: 0px;
+    left: 446px;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+    border-color: rgba(78, 80, 88, 0.47999998927116394);
+    border-style: solid;
+    border-width: 1px;
+  }
+  .desktop11-divqr-login-inner1pht-z {
+    top: 0px;
+    left: 480px;
+    width: 1px;
+    height: 589px;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    flex-grow: 1;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
+  .desktop11-text21 {
+    color: rgba(0, 168, 252, 1);
+    height: auto;
+    font-size: 13px;
+    font-style: Display Medium;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 16px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop11-frame7 {
+    gap: 10px;
+    top: 293px;
+    left: 720px;
+    width: 414px;
+    display: flex;
+    padding: 10px;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .desktop11-chat-master1 {
+    width: 394px;
+    height: 383px;
+  }
