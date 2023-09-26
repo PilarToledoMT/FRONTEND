@@ -209,6 +209,9 @@
     background-color: rgba(126, 217, 87, 1);
     white-space: nowrap;
   }
+  .desktop2-button:hover {
+    cursor: pointer;
+}
   
   .desktop2-divcontents3nemb-x {
     display: flex;

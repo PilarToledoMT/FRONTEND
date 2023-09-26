@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const userData = {
           email: email,
-          password: password
+          contrasenia: password
       };
       fetch('http://127.0.0.1:5000/login', {
           method: 'POST',
