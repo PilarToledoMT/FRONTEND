@@ -1,3 +1,18 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const passwordInput = document.getElementById("password-input");
+    const togglePassword = document.getElementById("toggle-password");
+  
+    function togglePasswordVisibility() {
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
+  
+    togglePassword.addEventListener("click", togglePasswordVisibility);
+  });
+
 document.addEventListener('DOMContentLoaded', function () {
   const loginButton = document.querySelector('.desktop2-button');
 
