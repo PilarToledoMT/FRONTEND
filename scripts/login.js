@@ -1,13 +1,28 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const passwordInput = document.getElementById("password-input");
+    const togglePassword = document.getElementById("toggle-password");
+  
+    function togglePasswordVisibility() {
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+      } else {
+        passwordInput.type = "password";
+      }
+    }
+  
+    togglePassword.addEventListener("click", togglePasswordVisibility);
+  });
+
 document.addEventListener('DOMContentLoaded', function () {
   const loginButton = document.querySelector('.desktop2-button');
 
   loginButton.addEventListener('click', function () {
       const email = document.querySelector('.desktop2-divinput3o04eu').value;
-      const password = document.querySelector('#password-input').value;
+      const contrasenia = document.querySelector('#password-input').value;
 
       const userData = {
           email: email,
-          password: password
+          contrasenia: contrasenia
       };
       fetch('http://127.0.0.1:5000/login', {
           method: 'POST',
