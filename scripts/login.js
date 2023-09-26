@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   loginButton.addEventListener('click', function () {
       const email = document.querySelector('.desktop2-divinput3o04eu').value;
-      const password = document.querySelector('#password-input').value;
+      const contrasenia = document.querySelector('#password-input').value;
 
       const userData = {
           email: email,
-          password: password
+          contrasenia: contrasenia
       };
       fetch('http://127.0.0.1:5000/login', {
           method: 'POST',
