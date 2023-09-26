@@ -1,16 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   const botonCrearServidor = document.getElementById("crear_servidor");
-  console.log("Botón clickeado");
-
+  
   botonCrearServidor.addEventListener("click", function () {
-    // Retrieve the value from the input field
     const nombreInput = document.getElementById("texto_nombre");
     const nombre = nombreInput.value;
 
-    // Create an object with the data to send in the request
     const requestData = {
-      nombre_servidor: nombre, // Use 'nombre_servidor' to match the existing controller
-      imagen_servidor: null, // Include any other fields if needed
+      nombre_servidor: nombre,
+      imagen_servidor: null,
     };
 
     fetch("http://127.0.0.1:5000/servidores", {
@@ -18,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(requestData), // Include the data in the request body
+      body: JSON.stringify(requestData),
     })
       .then((response) => {
         if (response.status === 200) {
@@ -32,3 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+  
