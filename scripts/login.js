@@ -1,16 +1,3 @@
-function togglePasswordVisibility() {
-    const passwordInput = document.querySelector('#password-input');
-    const togglePassword = document.querySelector('#toggle-password');
-  
-    if (passwordInput.type === 'password') {
-      passwordInput.type = 'text';
-      togglePassword.textContent = '👁️';
-    } else {
-      passwordInput.type = 'password';
-      togglePassword.textContent = '👁️';
-    }
-  }
-
 document.addEventListener('DOMContentLoaded', function () {
   const loginButton = document.querySelector('.desktop2-button');
 
@@ -20,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const userData = {
           email: email,
-          contrasenia: password
+          password: password
       };
       fetch('http://127.0.0.1:5000/login', {
           method: 'POST',
