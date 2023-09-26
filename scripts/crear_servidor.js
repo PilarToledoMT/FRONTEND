@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   botonCrearServidor.addEventListener("click", function () {
 /*Esta línea adjunta un escuchador de eventos de "clic" al botón "crear_servidor". 
 Cuando se hace clic en este botón, se ejecutará la función dentro del escuchador de eventos. */    
-    const nombreInput = document.getElementById("texto_nombre");
+    const nombreInput = document.getElementById("nombre_servidor");
 /*obtiene una referencia al campo de texto del HTML (input) con el ID "texto_nombre".*/ 
     const nombre = nombreInput.value;
 /*extrae el valor ingresado en el campo de texto (id: "texto_nombre") y lo almacena en una 
@@ -20,6 +20,7 @@ variable llamada "nombre".*/
 /*crea un objeto llamado "requestData" que contiene los datos que deseas enviar al servidor. 
 En este caso, incluye el campo "nombre_servidor" con el valor de "nombre" obtenido del campo de entrada*/
 
+    
     fetch("http://127.0.0.1:5000/servidores", {
       method: "POST",
       headers: {
@@ -34,6 +35,9 @@ formato JSON en el cuerpo de la solicitud*/
       .then((response) => {
         if (response.status === 200) {
           // Handle successful response
+          alert('¡Servidor creado con exito!');
+          nombreInput.value = "";
+          imagenInput.value = "";
         } else {
           // Handle failed response
         }
