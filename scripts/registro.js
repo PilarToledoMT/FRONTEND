@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
               emailInput.value = "";
               nombre_usuarioInput.value = "";
               contraseniaInput.value = "";
+              window.location.href = "../templates/login.html";
             } else {
               // Handle failed response
             }
