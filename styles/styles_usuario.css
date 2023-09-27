@@ -43,6 +43,7 @@
     border-color: rgba(126, 217, 87, 1);
     border-style: hidden;
     border-width: 5px;
+    border-radius: 50%
   }
   .desktop7-frame5 {
     gap: 10px;
