@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       })
       .then(response => {
           if (response.ok) {
+              localStorage.setItem('email', email)
               window.location.href = '../templates/main.html';
           } else {
               console.error('Error al iniciar sesión.');
