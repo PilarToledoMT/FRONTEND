@@ -1,3 +1,19 @@
+function cargarImagenYObtenerId() {
+    const inputImagen = document.querySelector('#input-imagen');
+    
+    const direccionImagen = inputImagen.value;
+
+    if (!direccionImagen) {
+        console.error("No se ha seleccionado una imagen");
+        return;
+    }
+
+    const formDataImagen = new FormData();
+    formDataImagen.append('imagen', direccionImagen);
+
+    fetch('http://127.0.0.1:5000/cargar_imagen')
+}
+
 function guardarCambios() {
     const nombre = document.querySelector('.desktop11-divinput3o04eu').value;
     const apellido = document.querySelector('.desktop11-input-password').value;
