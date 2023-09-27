@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 /*Este evento se dispara cuando el documento HTML se ha cargado completamente y ha sido analizado por el navegador*/
-  const botonCrearServidor = document.getElementById("crear_servidor");
+  const botonCrearServidor = document.getElementById("boton_crear_servidor");
 /*Se obtiene una referencia de un botón del HTML con el ID "crear_servidor" en la página html*/  
   botonCrearServidor.addEventListener("click", function () {
 /*Esta línea adjunta un escuchador de eventos de "clic" al botón "crear_servidor". 
