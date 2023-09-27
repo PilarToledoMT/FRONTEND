@@ -31,24 +31,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 const serverImagesContainer = document.getElementById('server-images-container');
 
                 serverData.forEach(server => {
-                    // Crear un botón en lugar de una imagen
                     const serverButton = document.createElement('button');
                     serverButton.style.backgroundImage = `url(${server.imagen_servidor})`;
                     serverButton.alt = server.nombre_servidor;
-                    serverButton.classList.add('server-button'); // Agregar una clase para el estilo
+                    serverButton.classList.add('server-button'); 
 
                     serverImagesContainer.appendChild(serverButton);
                 });
 
-                // Verificar si hay al menos un servidor
                 if (serverData.length > 0) {
-                    // Obtener el nombre del primer servidor
                     const primerServidor = serverData[0].nombre_servidor;
-                    // Actualizar el texto del elemento desktop3-text12
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
                     nombreServidorElement.textContent = primerServidor;
                 } else {
-                    // Si no hay servidores, dejar el texto en blanco
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
                     nombreServidorElement.textContent = '';
                 }
