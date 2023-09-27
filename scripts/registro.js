@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
           apellido: apellido,
           email:email,
           nombre_usuario:nombre_usuario,
-          contrasenia:contrasenia
+          contrasenia:contrasenia,
         };
     /*crea un objeto llamado "requestData" que contiene los datos que deseas enviar al servidor. 
     En este caso, incluye el campo "nombre_servidor" con el valor de "nombre" obtenido del campo de entrada*/
