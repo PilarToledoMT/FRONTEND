@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
               window.location.href = '../templates/main.html';
           } else {
               console.error('Error al iniciar sesión.');
+              alert("Usuario o contraseña incorrectos")
           }
       })
       .catch(error => {
