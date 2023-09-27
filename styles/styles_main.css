@@ -480,9 +480,9 @@
     color: rgb(255, 255, 255);
     height: auto;
     position: absolute;
-    font-size: 20px;
+    font-size: 19px;
     font-style: Bold;
-    text-align: left;
+    text-align: center;
     font-family: Roboto;
     font-weight: 800;
     line-height: normal;
@@ -591,3 +591,27 @@
     height: 83px;
     position: absolute;
   }
+  #server-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 50%;
+    overflow-y: auto;
+    margin-top: 220px;
+  }
+  #server-images-container img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .server-button {
+    width: 60px;
+    height: 60px;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    border-radius: 50%; 
+    cursor: pointer; 
+    margin: 5px; 
+}
