@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             userImageElement.src = imageUrl;
 
             const userId = userData.id_usuario;
+            localStorage.setItem('userId', userId)
 
             fetch(`http://127.0.0.1:5000/servidor/${userId}`, {
                 method: 'GET',
