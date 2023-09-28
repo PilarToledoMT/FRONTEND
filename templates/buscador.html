@@ -29,15 +29,17 @@
             </div>
           </div>
           <div class="desktop4-divmargin-bottom20315rvt">
-            <input type="text" placeholder="Ingrese el nombre del servidor a buscar" class="desktop4-divinput3o04eu" />
+            <input type="text" id="searchInput" placeholder="Ingrese el nombre del servidor a buscar" class="desktop4-divinput3o04eu" />
           </div>
           <a href="../templates/main.html" class="desktop4-button">
               <span class="desktop4-text2"><span>Inicio</span></span>
           </a>
-          <button class="desktop4-button1">
+          <button class="desktop4-button1" id="searchButton">
             <span class="desktop4-text4"><span>Buscar</span></span>
           </button>
+          <select id="serverDropdown" style="display: none;"></select>
         </div>
     </div>
+    <script src="../scripts/buscador.js"></script>
 </body>
 </html>
