@@ -47,12 +47,64 @@ document.addEventListener('DOMContentLoaded', function () {
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
                     nombreServidorElement.textContent = primerServidor.nombre_servidor;
 
-                    // Llamar a la función para cargar los canales del primer servidor
-                    cargarCanalesDelServidor(primerServidor.id_servidor);
                 } else {
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
                     nombreServidorElement.textContent = '';
                 }
+                fetch(`http://127.0.0.1:5000/canal`, {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        }
+                    })
+                    .then(response => response.json())
+                    .then(canalesData => {
+
+                        if (canalesData && Array.isArray(canalesData.canales)) {
+                            const channelContainer = document.querySelector('.desktop3-channel-container');
+                    
+                            channelContainer.innerHTML = '';
+                    
+                            canalesData.canales.forEach(channel => {
+                                const channelElement = document.createElement('div');
+                                channelElement.className = 'desktop3-channel-element';
+                    
+                                const channelImage = document.createElement('img');
+                                channelImage.src = '../assets/hashtag.png';
+                                channelImage.alt = 'Canal';
+
+                                channelImage.style.width = '30px';
+                                channelImage.style.height = '30px';
+                    
+                                const channelButton = document.createElement('button');
+                                channelButton.textContent = channel.nombre_canal;
+                                channelButton.className = "channel-button";
+
+                                const settingsLink = document.createElement('a');
+                                settingsLink.href = '../templates/modificar_canal.html';
+
+                                const settingsIcon = document.createElement('img');
+                                settingsIcon.src = '../assets/configuraciones.png';
+                                settingsIcon.alt = 'Configuraciones';
+
+                                settingsIcon.style.widht = '20px';
+                                settingsIcon.style.height = '20px';
+                                settingsLink.appendChild(settingsIcon);
+                                settingsIcon.className = 'desktop3-settings-image';
+                    
+                                channelElement.appendChild(channelImage);
+                                channelElement.appendChild(channelButton);
+                                channelElement.appendChild(settingsLink);
+                    
+                                channelContainer.appendChild(channelElement);
+                            });
+                        } else {
+                            console.error('Los datos de los canales no son válidos.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error al obtener los canales:', error);
+                    });
             })
             .catch(error => {
                 console.error('Error al obtener los servidores del usuario:', error);
@@ -60,39 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => {
             console.error('Error al obtener los datos del usuario:', error);
-        });
-    }
-
-    function cargarCanalesDelServidor(serverId) {
-        fetch(`http://127.0.0.1:5000/canal/${serverId}/`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-            }
-        })
-        .then(response => response.json())
-        .then(canalesData => {
-            const channelContainer = document.querySelector('.desktop3-channel-container');
-            channelContainer.innerHTML = '';
-
-            canalesData.forEach(nombre_canal => {
-                const channelDiv = document.createElement('div');
-                channelDiv.classList.add('desktop3-channel-item');
-
-                const numeralImage = document.createElement('img');
-                numeralImage.src = '../assets/hashtag.png';
-                numeralImage.alt = '#';
-                channelDiv.appendChild(numeralImage);
-
-                const channelNameElement = document.createElement('span');
-                channelNameElement.textContent = nombre_canal;
-                channelDiv.appendChild(channelNameElement);
-
-                channelContainer.appendChild(channelDiv);
-            });
-        })
-        .catch(error => {
-            console.error('Error al obtener los canales del servidor:', error);
         });
     }
 });

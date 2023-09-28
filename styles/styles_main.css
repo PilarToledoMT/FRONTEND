@@ -373,7 +373,7 @@
     top: 56px;
     left: 10px;
     width: 252px;
-    height: 34px;
+    height: 860px;
     display: flex;
     overflow: hidden;
     position: absolute;
@@ -528,7 +528,7 @@
   }
   .desktop3-divlist-item1 {
     top: 98px;
-    width: 300px;
+    width: 60px;
     height: 60px;
     display: flex;
     overflow: hidden;
@@ -616,7 +616,32 @@
     margin: 5px; 
 }
 
-
 .hidden {
   display: none;
+}
+.desktop3-channel-element {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color:white;
+  font-family: Roboto;
+  font-size: 15px;
+}
+
+.desktop3-svgicon5 {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.desktop3-settings-image {
+  margin-left: 30px;;
+}
+.channel-button {
+  background-color: transparent;
+  border: none; 
+  color: white;
+  font-family: Roboto;
+  font-size: 15px;
+  cursor: pointer;
 }
