@@ -43,48 +43,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
 
                 if (serverData.length > 0) {
-                    const primerServidor = serverData[0].nombre_servidor;
+                    const primerServidor = serverData[0];
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
-                    nombreServidorElement.textContent = primerServidor;
+                    nombreServidorElement.textContent = primerServidor.nombre_servidor;
+
+                    // Llamar a la función para cargar los canales del primer servidor
+                    cargarCanalesDelServidor(primerServidor.id_servidor);
                 } else {
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
                     nombreServidorElement.textContent = '';
                 }
-
-                const serverButtons = document.querySelectorAll('.server-button');
-                serverButtons.forEach(button => {
-                    button.addEventListener("click", function () {
-                        const serverId = button.getAttribute('data-server-id');
-
-                        fetch(`http://127.0.0.1:5000/canal/${serverId}/`, {
-                            method: 'GET',
-                            headers: {
-                                'Content-Type': 'application/json',
-                            }
-                        })
-                        .then(response => response.json())
-                        .then(canalesData => {
-                            const channelContainer = document.querySelector('.desktop3-channel-container');
-                            channelContainer.innerHTML = '';
-
-                            canalesData.forEach(nombre_canal => {
-                                const channelDiv = document.createElement('div');
-                                channelDiv.classList.add('desktop3-channel-item');
-
-                                const numeralImage = document.createElement('img');
-                                numeralImage.src = '../assets/hashtag.png';
-                                numeralImage.alt = '#';
-                                channelDiv.appendChild(numeralImage);
-
-                                const channelNameElement = document.createElement('span');
-                                channelNameElement.textContent = nombre_canal;
-                                channelDiv.appendChild(channelNameElement);
-
-                                channelContainer.appendChild(channelDiv);
-                            })
-                        })
-                    })
-                })
             })
             .catch(error => {
                 console.error('Error al obtener los servidores del usuario:', error);
@@ -92,6 +60,39 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .catch(error => {
             console.error('Error al obtener los datos del usuario:', error);
+        });
+    }
+
+    function cargarCanalesDelServidor(serverId) {
+        fetch(`http://127.0.0.1:5000/canal/${serverId}/`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(canalesData => {
+            const channelContainer = document.querySelector('.desktop3-channel-container');
+            channelContainer.innerHTML = '';
+
+            canalesData.forEach(nombre_canal => {
+                const channelDiv = document.createElement('div');
+                channelDiv.classList.add('desktop3-channel-item');
+
+                const numeralImage = document.createElement('img');
+                numeralImage.src = '../assets/hashtag.png';
+                numeralImage.alt = '#';
+                channelDiv.appendChild(numeralImage);
+
+                const channelNameElement = document.createElement('span');
+                channelNameElement.textContent = nombre_canal;
+                channelDiv.appendChild(channelNameElement);
+
+                channelContainer.appendChild(channelDiv);
+            });
+        })
+        .catch(error => {
+            console.error('Error al obtener los canales del servidor:', error);
         });
     }
 });
