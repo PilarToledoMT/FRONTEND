@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                                 messageTextElement.textContent = message.mensaje;
 
                                                 messageElement.appendChild(usernameAndTimestampElement);
-                                                messageElement.appendChild(document.createElement('br'));
+                                                messageElement.appendChild(document.createElement('br')); 
                                                 messageElement.appendChild(messageTextElement);
 
                                                 chatbox.appendChild(messageElement);
