@@ -645,3 +645,21 @@
   font-size: 15px;
   cursor: pointer;
 }
+.desktop3-messages-container{
+  color: white;
+  margin-top: 100px;
+  margin-left: 500px;
+  font-family: Roboto;
+  font-size: 15px;
+}
+.message-container{
+  background-color: rgb(126, 217, 87);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: black;
+}
+
+.message-container span {
+  font-size: 25px;
+}

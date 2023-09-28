@@ -80,6 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 channelButton.textContent = channel.nombre_canal;
                                 channelButton.className = "channel-button";
 
+                                channelButton.setAttribute('data-channel-id', channel.id_canal);
+
                                 const settingsLink = document.createElement('a');
                                 settingsLink.href = '../templates/modificar_canal.html';
 
@@ -97,6 +99,46 @@ document.addEventListener('DOMContentLoaded', function () {
                                 channelElement.appendChild(settingsLink);
                     
                                 channelContainer.appendChild(channelElement);
+
+                                channelButton.addEventListener('click', function () {
+                                    const canalNombre = channelButton.textContent;
+
+                                    fetch(`http://127.0.0.1:5000/mensajes/${canalNombre}`, {
+                                        method: 'GET',
+                                        headers: {
+                                            'Content-Type': 'application/json',
+                                        }
+                                    })
+                                    .then(response => response.json())
+                                    .then (messagesData => {
+                                        const chatbox = document.getElementById('messages-container');
+                                        chatbox.innerHTML = '';
+                                        
+                                        if (messagesData && Array.isArray(messagesData.mensajes)) {
+                                            messagesData.mensajes.forEach (message => {
+                                                const messageElement = document.createElement('div');
+                                                messageElement.classList.add('message-container');
+                                                
+                                                const usernameAndTimestampElement = document.createElement('strong');
+                                                usernameAndTimestampElement.textContent = `${message.nombre_usuario} (${message.fecha_hora})`;
+
+                                                const messageTextElement = document.createElement('span');
+                                                messageTextElement.textContent = message.mensaje;
+
+                                                messageElement.appendChild(usernameAndTimestampElement);
+                                                messageElement.appendChild(document.createElement('br'));
+                                                messageElement.appendChild(messageTextElement);
+
+                                                chatbox.appendChild(messageElement);
+                                        });
+                                    } else {
+                                        console.error('Los datos de los mensajes no son válidos');
+                                    } 
+                                    })
+                                    .catch(error => {
+                                        console.error("Error al obtener los mensajes del canal:", error);
+                                    });
+                                });
                             });
                         } else {
                             console.error('Los datos de los canales no son válidos.');
