@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", function () {
     botonBuscar.addEventListener("click", function () {
       const buscar = buscarInput.value;
       const requestData = {
-        nombre_servidor: buscar,
+        partial_name: buscar,
       };
   
       fetch("http://127.0.0.1:5000/servidores/search", {
-        method: "POST", // Cambiar a POST
+        method: "POST", 
         headers: {
           "Content-Type": "application/json",
         },
