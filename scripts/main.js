@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const primerServidor = serverData[0];
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
                     nombreServidorElement.textContent = primerServidor.nombre_servidor;
+                    localStorage.setItem('id_servidor', primerServidor.id_servidor);
 
                 } else {
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
