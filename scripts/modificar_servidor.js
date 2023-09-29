@@ -23,34 +23,40 @@ document.addEventListener('DOMContentLoaded', function() {
         const nombreServidor = nombreServidorInput.value;
         const imagenServidorFile = imagenServidorInput.files[0];
 
+        // Validar los datos antes de enviarlos al servidor
+        if (!nombreServidor) {
+            alert('Por favor, ingrese un nombre de servidor válido.');
+            return;
+        }
+
         const requestData = {
             nombre_servidor: nombreServidor,
             imagen_servidor: imagenServidorFile,
-          };
-
-          
+        };
 
         fetch(`http://127.0.0.1:5000/servidores/${idServidorGuardado}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(requestData),
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(requestData),
         })
         .then((response) => {
-        if (response.status === 200) {
-            // Maneja una respuesta exitosa
-            alert('¡Servidor creado con éxito!');
-            nombreInput.value = '';
-            imagenInput.value = '';
-        } else {
-            // Maneja una respuesta fallida
-            alert('Error al crear el servidor.');
-        }
+            if (response.status === 200) {
+                // Maneja una respuesta exitosa
+                alert('¡Servidor modificado con éxito!');
+                // Limpiar los valores después del éxito
+                nombreServidorInput.value = '';
+                imagenServidorInput.value = '';
+            } else {
+                // Maneja una respuesta fallida
+                alert('Error al modificar el servidor.');
+            }
         })
         .catch((error) => {
-        // Maneja errores de red u otros errores
-        console.error('Error en la solicitud: ' + error.message);
+            // Maneja errores de red u otros errores
+            console.error('Error en la solicitud: ' + error.message);
+            alert('Error en la solicitud. Por favor, inténtelo de nuevo más tarde.');
         });
     });
 
@@ -58,4 +64,4 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         window.location.href = '../templates/main.html';
     });
-    });
+});
