@@ -10,6 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(response => response.json())
         .then(userData => {
+
+            localStorage.setItem('userId', userData.id_usuario);
+            localStorage.setItem('username', userData.nombre_usuario);
+            localStorage.setItem('userImage', userData.imagen_perfil.imagen);
+
+            console.log(userData.nombre_usuario);
+            console.log(userData.id_usuario);
+            console.log(userData.imagen_usuario);
+
             const usernameElement = document.querySelector('.desktop3-text06 span');
             usernameElement.textContent = userData.nombre_usuario;
 
@@ -18,10 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const userImageElement = document.querySelector('.desktop3-divavatar1');
             userImageElement.src = imageUrl;
 
-            const userId = userData.id_usuario;
-            localStorage.setItem('userId', userId)
 
-            fetch(`http://127.0.0.1:5000/servidor/${userId}`, {
+            fetch(`http://127.0.0.1:5000/servidor/${userData.id_usuario}`, {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -29,9 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .then(response => response.json())
             .then(serverData => {
+                
                 const serverImagesContainer = document.getElementById('server-images-container');
 
                 serverData.forEach(server => {
+                    
+
+
                     const serverButton = document.createElement('button');
                     serverButton.style.backgroundImage = `url(${server.imagen_servidor})`;
                     serverButton.alt = server.nombre_servidor;
@@ -41,12 +52,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     serverImagesContainer.appendChild(serverButton);
                 });
-
+            
                 if (serverData.length > 0) {
                     const primerServidor = serverData[0];
+
+                    localStorage.setItem('id_servidor', primerServidor.id_servidor);
+                    localStorage.setItem('nombre_servidor', primerServidor.nombre_servidor);
+                    localStorage.setItem('imagen_servidor', primerServidor.imagen_servidor);
+
+                    console.log(primerServidor.nombre_servidor)
+
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
                     nombreServidorElement.textContent = primerServidor.nombre_servidor;
-                    localStorage.setItem('id_servidor', primerServidor.id_servidor);
 
                 } else {
                     const nombreServidorElement = document.querySelector('.desktop3-text12');
@@ -60,6 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     })
                     .then(response => response.json())
                     .then(canalesData => {
+                        const selectedChannel = canalesData.canales[0];
+                        console.log(selectedChannel)
+                        localStorage.setItem('id_canal', selectedChannel.id_canal);
+                        localStorage.setItem('nombre_canal', selectedChannel.nombre_canal);
+                        localStorage.setItem('id_servidor', selectedChannel.id_servidor);
 
                         if (canalesData && Array.isArray(canalesData.canales)) {
                             const channelContainer = document.querySelector('.desktop3-channel-container');
@@ -67,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             channelContainer.innerHTML = '';
                     
                             canalesData.canales.forEach(channel => {
+
                                 const channelElement = document.createElement('div');
                                 channelElement.className = 'desktop3-channel-element';
                     
