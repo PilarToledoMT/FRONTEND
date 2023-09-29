@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       const nombreInput = document.getElementById("nombre_canal");
       const nombre = nombreInput.value;
-  
+
       const id_servidor = localStorage.getItem('id_servidor');
   
       const requestData = {
