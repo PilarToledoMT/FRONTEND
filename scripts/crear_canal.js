@@ -8,13 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
       const nombre = nombreInput.value;
 
       const id_servidor = localStorage.getItem('id_servidor');
-  
       const requestData = {
         nombre_canal: nombre,
         id_servidor: id_servidor,
       };  
       
-      fetch("http://127.0.0.1:5000/servidores", {
+      fetch("http://127.0.0.1:5000/canal", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
