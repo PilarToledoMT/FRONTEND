@@ -36,9 +36,11 @@ document.addEventListener("DOMContentLoaded", function () {
         // Crear un botón
         var boton = document.createElement("button");
         boton.innerHTML = "UNIRME";
+        boton.className="boton-unirme"
 
         // Crear un elemento select
         var selectBox = document.createElement("select");
+        selectBox.className = "select"
 
         // Verificar y agregar opciones si están definidas
         if (data.servers && data.servers.length > 0) {
