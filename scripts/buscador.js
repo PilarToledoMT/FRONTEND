@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const botonBuscar = document.getElementById("searchButton");
   const buscarInput = document.getElementById("searchInput");
-  const divSelect = document.getElementById("selectBox"); // Obtener el div del cuadro seleccionable
-  const divUnir = document.getElementById("botonUnir"); // Obtener el div del botón "UNIRME"
+  const divSelect = document.getElementById("selectBox"); 
+  const divUnir = document.getElementById("botonUnir"); 
 
   botonBuscar.addEventListener("click", function () {
     const buscar = buscarInput.value;
@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Limpiar resultados anteriores
-    divSelect.innerHTML = ""; // Eliminar contenido del cuadro seleccionable
-    divUnir.innerHTML = ""; // Eliminar contenido del botón "UNIRME"
+    divSelect.innerHTML = ""; 
+    divUnir.innerHTML = ""; 
 
     fetch("http://127.0.0.1:5000/servidores/search", {
       method: "POST",
